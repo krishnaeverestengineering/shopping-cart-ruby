@@ -1,0 +1,14 @@
+= simple_form_for @user, url: {action: "user_athentication"} do |f|
+    .container
+        h2 Login
+        hr
+        f.error_notification
+        form.col-sm-12
+            .form-group
+                = f.label :email
+                = f.input_field :email, class: 'form-control'
+            .form-group
+                = f.label :password
+                = f.input_field :password, class: 'form-control'
+            .form-group
+                = f.submit 'Login', class: 'btn btn-primary'

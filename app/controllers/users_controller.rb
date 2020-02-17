@@ -14,9 +14,7 @@ class UsersController < ApplicationController
       session[:user_email] = user.email
       redirect_to products_url
     else
-      logger.info "login failed"
-      flash.now[:notice] = "login failed"
-      redirect_to login_path
+      redirect_to login_path, notice:"login failed"
     end
   end
 

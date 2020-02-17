@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   get 'seller/EditProduct', to: 'seller#editProduct'
   get 'seller/MyProducts', to: 'seller#myProducts'
 
+  post 'add-product', to: 'seller#add_new_product'
+
   resources :products
   get 'home', to: 'products#index'
 end

@@ -1,0 +1,7 @@
+h2 cart
+.container
+    .row
+        - @items.each do |product|
+            .col-sm-2.thumbnail.item
+                    .caption
+                        h4 = product.id

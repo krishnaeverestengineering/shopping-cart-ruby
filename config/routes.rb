@@ -19,4 +19,6 @@ Rails.application.routes.draw do
 
   resources :products
   get 'home', to: 'products#index'
+  get 'addtocart/*id', to: 'products#addToCart', as: 'addCart'
+
 end

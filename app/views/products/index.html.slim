@@ -20,5 +20,5 @@
                     .caption
                         h4 = product.name
                         p.wrap-content = product.description
-                        = link_to  "Add to Cart", product, class:"btn btn-default"
+                        = link_to  "Add to Cart", addCart_path(product.id), class:"btn btn-default"
 
